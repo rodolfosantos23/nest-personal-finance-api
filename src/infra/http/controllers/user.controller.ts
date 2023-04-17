@@ -1,8 +1,8 @@
 import { Body, Controller, Get, Post } from '@nestjs/common';
-import { CreateUserDto } from 'src/app/dtos/create-user-dto';
+import { CreateUserDto } from 'src/app/dtos/create-user.dto';
 import { UserEntity } from 'src/app/entities/user.entity';
-import { CreateUserUseCase } from 'src/app/use-cases/user/create-user-use-case';
-import { GetAllUsersUseCase } from 'src/app/use-cases/user/get-all-users-use-case';
+import { CreateUserUseCase } from 'src/app/use-cases/user/create-user.usecase';
+import { GetAllUsersUseCase } from 'src/app/use-cases/user/get-all-users.usecase';
 
 @Controller('users')
 export class UserController {
