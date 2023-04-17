@@ -3,7 +3,7 @@
 A personal finance API project made with NEST.js to apply some concepts of Software Engineering 
 and Design Patterns.
 
-The goal is to make an API with the following resources:
+The goal is to do an API with the following resources:
 
 - User registration
 - Bank account registration
@@ -12,7 +12,7 @@ The goal is to make an API with the following resources:
 - Credit Card monthly spendings
 - Personal finance balance
 
-Some of the concepts that I'll going to apply:
+Some of the concepts that I'm going to apply:
 
 - SOLID principles
 - Clean Code
