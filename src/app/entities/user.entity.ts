@@ -1,4 +1,4 @@
-import { randomUUID } from "crypto";
+import { randomUUID } from 'crypto';
 
 interface UserProps {
   id?: string;
@@ -12,12 +12,18 @@ export class UserEntity {
 
   constructor(props: UserProps) {
     this.props = props;
-    if(!props.id) {
-      this.props.id = randomUUID();
-    }
+    
+    // Set ID if not passed as an argument
+    this.props.id = props.id ? props.id : randomUUID();
+
+    // Call setters
+    this.name = props.name;
   }
 
   public set name(name: string) {
+    if (name.length < 5) {
+      throw new Error('The name must be at least 5 characters long');
+    }
     this.props.name = name;
   }
 

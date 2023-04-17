@@ -1,14 +1,22 @@
-import { UserEntity } from "./user.entity";
-
+import { UserEntity } from './user.entity';
 
 describe('User entity', () => {
   it('should be abble to create an user', () => {
-    const userEntity = new UserEntity({
-      name: 'Name Last Name',
+    const newUser = new UserEntity({
+      name: 'Rodolfo Santos',
       email: 'email@gmail.com.br',
       phone: '11988686868',
     });
+    expect(newUser).toBeTruthy();
+  });
 
-    expect(userEntity).toBeTruthy();
+  it('should fail if name is less than 5 characters', () => {
+    expect(() => {
+      new UserEntity({
+        name: '123',
+        email: 'email@gmail.com.br',
+        phone: '11988686868',
+      });
+    }).toThrow();
   });
 });
