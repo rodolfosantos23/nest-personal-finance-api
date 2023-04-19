@@ -1,5 +1,5 @@
 import { randomUUID } from 'crypto';
-import { UserInMemoryDatabaseRepository } from '../../infra/database/in-memory-database/repositories/user-inmemory.repository';
+import { UserInMemoryDatabaseRepository } from '../../../test/repositories/user-inmemory.repository';
 import { UserEntity } from './user.entity';
 
 function getUserData() {
