@@ -17,6 +17,7 @@ Some of the concepts that I'm going to apply:
 - SOLID principles
 - Clean Code
 - DDD 
+- Factory Design Pattern
 - In Memory Database
 - Unity and End to End tests
 
